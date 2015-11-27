@@ -5,12 +5,12 @@ from calendar import Calendar
 
 def consumed_hours():
     from numpy.random import normal
-    return round(normal(10.5, 0.3), 1)
+    return round(normal(10.5, 0.7), 1)
 
 cal = Calendar()
 for d in cal.itermonthdates(year, month):
     if d.month != month:
-        print '%2d/%2d'%(d.month, d.day),
+        print '%5s'%('%d/%d'%(d.month, d.day)),
     else:
         print '%5d'%d.day,
 
