@@ -1,5 +1,7 @@
+from datetime import datetime
 
-year, month = 2015, 12
+now = datetime.now()
+year, month = now.year, now.month
 
 from calendar import Calendar
 
